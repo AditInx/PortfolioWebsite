@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.nav-link{
+    color: #03B0FD;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: #03B0FD;
+    border-bottom: 2px dashed white;
+    transition-duration: 400ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.nav-link:focus{
+    color: #03B0FD;
+}
+
+
+.btn-custom {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background-color: #03b0fd;
+    color: white;
+  }
+  @media (max-width: 768px) {
+    .btn-custom {
+      border-radius: 10px; /* Less rounded corners */
+      padding: 8px 15px; /* Adjust padding */
+      font-size: 14px; /* Slightly smaller font size */
+    }
+  }
+
+  /* Ensuring the image resizes properly */
+  .righthome img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent distortion */
+  }
+
+  /* For smaller screens, center the image below the content */
+  @media (max-width: 768px) {
+    .righthome {
+      text-align: center;
+    }
+  }
+
+  .btn-custom:hover {
+    transform: scale(1.1);
+    border-color: #03b0fd;
+    box-shadow: 0 0 15px #03b0fd;
+    background-color: transparent;
+    color: #03b0fd;
+  }
+
+  .homebtns {
+    margin-top: 20px;
+  }
+  .skill-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.skill-title {
+    font-size: 1.25rem;
+    color: #ffffff;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.progress-container {
+    width: 75%; /* Fixed width for all progress bars */
+}
+
+.progress {
+    height: 1.5rem; /* Uniform height for progress bars */
+}
+
+
+.progress-bar {
+    font-size: 0.9rem; /* Optional: Text size inside the progress bar */
+}
